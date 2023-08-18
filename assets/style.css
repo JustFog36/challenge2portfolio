@@ -2,28 +2,32 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    color: lime;
 }
 
 body {
-    background-color: #979b97;
+    background-color: black;
 }
 
 header {
-    padding: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #9aa096;
+    background-color: black;
     color: #ffffff;
 }
 
 header h1 {
+    background-color:lime;
+    color:black;
+    padding-left: 7%;
+    margin-top: 1%;
     display: inline-block;
-    font-size: 48px;
+    font-size: 240%;
 }
 
 header nav {
-    padding-top: 15px;
-    margin-right: 20px;
+    width: 70%;
     float: right; 
+    padding-top: 1%;
 }
 
 header nav ul {
@@ -31,10 +35,67 @@ header nav ul {
 }
 
 header nav ul li {
+    float: right;
+    font-size: 150%;
     font-family: fantasy; 
-    font-size: 35px;
     text-decoration: underline;
-    display: inline-block;
-    margin-left: 25px;
-    color: #4ec7c7;
+    color: lime;
+    padding: 1%;
+    padding-right: 2%;
+    opacity: .75;
+}
+
+/* keeps the nav links the same color after clicked */
+a, a:visited{
+    color: lime;
+}
+
+header nav ul li:hover {
+    opacity: 1;
+}
+
+section {
+    padding-top: 1px;
+    margin-top: 1%;
+    background-color: aqua;
+    height: 150px;
+    width: auto;
+}
+
+section h1 {
+    background-color: lime;
+    color:black;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 75%;
+    margin-top: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 2%;
+    font-size: 150%;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+main h2 {
+    flex: 1 1 80%;
+    margin-top: 5%;
+    margin-left: 8%;
+    font-size: 250%;
+    width: 15%;
+    border-right: solid 5px lime;
+}
+
+main p {
+    float: right;
+    text-align: left;
+    margin-right: 11%;
+    margin-left: 3%;
+    font-size: 24px;
+    margin-top: 7%;
 }
