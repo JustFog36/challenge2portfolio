@@ -54,25 +54,36 @@ header nav ul li:hover {
     opacity: 1;
 }
 
-section.topPhoto {
+.topPhoto img {
+    height: 150px;
+    width: 100%;
+}
+
+/* section.topPhoto {
     padding-top: 1px;
     margin-top: 10px;
     background-color: darkgrey;
     height: 150px;
     min-width: 1130px;
-}
+} */
 
 section.topPhoto h1 {
+    position: relative;
     background-color: lime;
+    width: 180px;
+    font-size: 150%;
+    bottom: 40px;
+    right: 10%;
+    left: 75%;
     color:black;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* margin-top: -2%;
     margin-left: 80%;
-    margin-top: 100px;
     overflow: hidden;
     white-space: nowrap;
     margin-right: 15px;
-    font-size: 150%;
+    font-size: 150%;  */
 
 }
 
@@ -100,7 +111,7 @@ main {
     margin-bottom: 1%;
 }
 
-.work {
+#work {
     display: flex;
     flex-flow: row wrap;
 }
@@ -127,7 +138,7 @@ main {
     position: absolute;
     padding: 20px;
     height: 70px;
-    width: 220px;
+    width: fit-content;
     bottom: 60px;
     left: 26px;
     font-size: 30px;
